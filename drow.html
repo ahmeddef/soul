@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css.map">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
+        
+    <title>New Dashboard</title>
+    <style>
+      div .navbar-nav .nav-item .nav-link{
+        color: white;
+      }
+        body{
+          font-family: 'El Messiri', sans-serif;
+          overflow-x: hidden; 
+          overflow-y: scroll;
+        }
+        nav{
+          font-family: 'Sono', sans-serif;
+        }
+        nav div .navbar-brand{
+color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- start navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <div class="col-6">
+      <img src="images/white.png" alt="logo" style="width:40px;">
+      <a class="navbar-brand" href="index.html">Soul</a>
+    </div>
+
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="col-6">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn" aria-current="page" href="about.html">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="singup.html">Singup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="login.html" tabindex="-1" aria-disabled="true">login</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+    <section>
+        <h2 class="title"></h2>
+        <div class="container">
+            <div id="video_player">
+                <iframe controls id="main-Video" src="" frameborder="0"></iframe>
+            </div>
+            <div class="playlistBx">
+                <div class="header">
+                    <div class="row">
+                        <span class="AllLessons"></span>
+                    </div>
+                </div>
+                <ul class="playlist" id="playlist">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="js/drow-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
